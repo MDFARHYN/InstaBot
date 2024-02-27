@@ -115,7 +115,7 @@ with open('account.json', 'r') as file:
               time.sleep(2)
 
         profile = driver.find_elements(By.CSS_SELECTOR,'._aad7')
-        for i in profile[:5]:
+        for i in profile[:20]:
                     profile_url = f'https://www.instagram.com/{i.text}/'
                     print(profile_url)
                     profile_list.append(profile_url)
