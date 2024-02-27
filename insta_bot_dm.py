@@ -106,7 +106,7 @@ with open('account.json', 'r') as file:
                 (By.XPATH, '//div[@class="_aano"]')))
 
         profile_list = []
-        for i in range (1,7):
+        for i in range (1,10):
                
               driver.execute_script( 
                 'arguments[0].scrollTop = arguments[0].scrollTop + arguments[0].offsetHeight;',  
@@ -120,7 +120,7 @@ with open('account.json', 'r') as file:
                     print(profile_url)
                     profile_list.append(profile_url)
 
-         
+        
         for i in profile_list:
                     time.sleep(5) 
                     print(f"Waiting 10 seconds for sending another message",  )
