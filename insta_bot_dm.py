@@ -115,13 +115,15 @@ with open('account.json', 'r') as file:
               time.sleep(2)
 
         profile = driver.find_elements(By.CSS_SELECTOR,'._aad7')
-        for i in profile[:2]:
+        for i in profile[:5]:
                     profile_url = f'https://www.instagram.com/{i.text}/'
                     print(profile_url)
                     profile_list.append(profile_url)
 
          
         for i in profile_list:
+                    time.sleep(5) 
+                    print(f"Waiting 10 seconds for sending another message",  )
                     driver.get(i)
                     profile_url = i
                     message_buuton =  (By.CSS_SELECTOR, '.x5n08af.xsz8vos')  
@@ -136,13 +138,14 @@ with open('account.json', 'r') as file:
                     wait_text_input = WebDriverWait(driver, 20).until(EC.presence_of_element_located(text_input))
                     text_box = driver.find_element(By.CLASS_NAME, 'xzsf02u')
                     text_box.send_keys(message_text)
+                    time.sleep(5) 
                     text_box.send_keys(Keys.ENTER)
                     print(f"Message_TEXT: {message_text} sent sucessfully to this profile {profile_url} ")
                     
                   
-                    print(f"Waiting 10 seconds for sending another message",  )
-                    time.sleep(10)   
-                    print("\nSending another message now")
+                   
+                     
+                    
 
         driver.quit()
         print("\nsucessfully send all messages")

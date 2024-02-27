@@ -19,6 +19,6 @@ pip install selenium-stealth
 
 [![InstaBot Tutorial](https://d2oow5sowr1hl8.cloudfront.net/blog/instagram_Bot_for_send_DM_d78955d87a724d3b8271c3af2d0f0f87.png)](https://www.youtube.com/watch?v=your_video_id)
 
-📧 Email: contact@farhyn.com
+ 
 
 🌐 Website: [farhyn.com](https://farhyn.com)
