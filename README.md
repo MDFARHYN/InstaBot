@@ -1,6 +1,6 @@
 # 🚀 InstaBot
 
-InstaBot is a tool designed for sending direct messages to your Instagram followers or those you follow. However, there are a few important things to keep in mind. Do not use this bot to send messages to a large number of people or spam others, as it may result in your account being banned.
+InstaBot is a tool designed for sending direct messages to your Instagram followers or those you follow. However, there are a few important things to keep in mind. Do not use this bot to send messages to a large number of people or spam others, as it may result in your account being banned. You can add multiple Instagram accounts in the account.json file. 
 
 ## Installation
 
